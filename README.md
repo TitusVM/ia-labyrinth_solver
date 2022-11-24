@@ -1,1 +1,1 @@
-# ia-labyrinth_solver
+# Documentation TP4 Labyrinth solver
