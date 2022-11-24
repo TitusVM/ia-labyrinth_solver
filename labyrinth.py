@@ -159,6 +159,10 @@ def parse_chromosome_V2(start_cell: tuple[int, int], end_cell: tuple[int, int], 
 
     return path
 
+
+#############################################################
+#                      PARSING TOOLS                        #
+#############################################################
 def valid_cell(cell: tuple[int, int], prev_cell: tuple[int, int], grid: np.ndarray) -> bool:
     """Validates a cell on three conditions:
             * The cell needs to be located inside the grid;
