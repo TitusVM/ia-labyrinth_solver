@@ -1,0 +1,384 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\titus\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.5\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="sommaire">Sommaire</h1>
+
+<ul>
+<li><a href="#sommaire">Sommaire</a></li>
+<li><a href="#les-sp%C3%A9cifications">Les sp&#xE9;cifications</a>
+<ul>
+<li><a href="#la-grille">La grille</a></li>
+<li><a href="#le-g%C3%A8ne">Le g&#xE8;ne</a></li>
+<li><a href="#lindividu-le-chromosome">L&#x2019;individu (le chromosome)</a></li>
+<li><a href="#le-but">Le but</a></li>
+</ul>
+</li>
+<li><a href="#la-d%C3%A9marche">La d&#xE9;marche</a>
+<ul>
+<li><a href="#linitialisation">L&apos;initialisation</a></li>
+<li><a href="#cr%C3%A9ation-dun-chemin-depuis-un-individu">Cr&#xE9;ation d&apos;un chemin depuis un individu</a></li>
+<li><a href="#fitness">Fitness</a></li>
+<li><a href="#g%C3%A9n%C3%A9ration">G&#xE9;n&#xE9;ration</a></li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="les-sp%C3%A9cifications">Les sp&#xE9;cifications</h1>
+
+<h2 class="mume-header" id="la-grille">La grille</h2>
+
+<p>La grille, sur laquelle se trouve le labyrinthe, est compos&#xE9;e de cellules. Ces cellules peuvent avoir deux &#xE9;tats. Soit elles sont un mur, infranchissables, ou alors elles ne sont pas un mur dans quel cas on peut naviguer dessus.</p>
+<h2 class="mume-header" id="le-g%C3%A8ne">Le g&#xE8;ne</h2>
+
+<p>Un g&#xE8;ne est un entier appartenant &#xE0; l&#x2019;ensemble suivant&#xA0;:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">S = {0, 1, 2, 3, 4}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span></span></span></span></span></p>
+<p>Cet ensemble repr&#xE9;sente les possibilit&#xE9;s de mouvements sur la grille du labyrinthe. C&#x2019;est-&#xE0;-dire que chaque g&#xE8;ne est une instruction de mouvement qui formera un d&#xE9;calage de la t&#xEA;te du chemin sur la grille. Ces mouvements sont d&#xE9;crits comme ceci&#xA0;:</p>
+<pre data-role="codeBlock" data-info="py" class="language-python">DIR_U 	<span class="token operator">=</span> <span class="token number">0</span> 			        <span class="token comment"># Up </span>
+DIR_D 	<span class="token operator">=</span> <span class="token number">1</span>				<span class="token comment"># Down</span>
+DIR_L 	<span class="token operator">=</span> <span class="token number">2</span>				<span class="token comment"># Left</span>
+DIR_R 	<span class="token operator">=</span> <span class="token number">3</span>				<span class="token comment"># Right</span>
+
+OPERATORS <span class="token operator">=</span> <span class="token punctuation">{</span>
+ 	DIR_U<span class="token punctuation">:</span> 	<span class="token punctuation">(</span>  <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        	DIR_D<span class="token punctuation">:</span> 	<span class="token punctuation">(</span>  <span class="token number">0</span><span class="token punctuation">,</span>  <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        	DIR_L<span class="token punctuation">:</span> 	<span class="token punctuation">(</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        	DIR_R<span class="token punctuation">:</span> 	<span class="token punctuation">(</span>  <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</pre><p>Lorsqu&#x2019;on applique une op&#xE9;ration (un g&#xE8;ne) sur une cellule de la grille, on re&#xE7;oit la prochaine cellule se trouvant soit en-dessous, au-dessus, &#xE0; droite ou &#xE0; gauche de la cellule de d&#xE9;part. Ceci est illustr&#xE9; dans le sch&#xE9;ma ci-dessous.</p>
+<img src="./doc/schemaTP4.png" alt="drawing" width="200">
+<h2 class="mume-header" id="lindividu-le-chromosome">L&#x2019;individu (le chromosome)</h2>
+
+<p>Un individu est compos&#xE9; d&#x2019;un ensemble de g&#xE8;nes. Cet ensemble est aussi appel&#xE9; chromosome, c&#x2019;est ce qui d&#xE9;finit l&#x2019;individu en soit. Un chromosome a une taille maximale de <code>CHROMOSOME_LENGTH</code> d&#xE9;finit comme suit :</p>
+<pre data-role="codeBlock" data-info="py" class="language-python">CHROMOSOME_LENGTH   <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span>grid<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> grid<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</pre><p>Ceci est en effet la taille maximale d&apos;un chemin sur la grille.</p>
+<h2 class="mume-header" id="le-but">Le but</h2>
+
+<p>Le but d&apos;un individu est de pr&#xE9;senter une solution &#xE0; la recherche du meilleur chemin pour atteindre la cellule cible en partant de la cellule de d&#xE9;part dans un labyrinthe sur une grille donn&#xE9;e. Il faut alors naviguer sans traverser de mur, sans se bloquer dans une impasse (un &quot;dead-end&quot;). On cherche alors &#xE0; g&#xE9;n&#xE9;rer le meilleur individu possible gr&#xE2;ce aux &#xE9;l&#xE9;ments ci dessus.</p>
+<h1 class="mume-header" id="la-d%C3%A9marche">La d&#xE9;marche</h1>
+
+<h2 class="mume-header" id="linitialisation">L&apos;initialisation</h2>
+
+<p>Le package &quot;deap&quot; est utilis&#xE9; tout au long de cette impl&#xE9;mentation, pour conna&#xEE;tre les sp&#xE9;cifications d&apos;utilisation il serait utile de consulter la documentation de ce dernier sous ce <a href="https://deap.readthedocs.io/en/master/overview.html">lien</a>.</p>
+<h2 class="mume-header" id="cr%C3%A9ation-dun-chemin-depuis-un-individu">Cr&#xE9;ation d&apos;un chemin depuis un individu</h2>
+
+<p>Afin de pouvoir &#xE9;valuer la capacit&#xE9; de survie ou &quot;fitness&quot; d&apos;un individu, il faut tout d&apos;abord le transformer en un chemin sur la grille. Pour cela, on utilise la fonction <code>parse_chromosome</code>. Cette fonction prend la premi&#xE8;re cellule, la cellule de d&#xE9;part, et y applique les instructions sp&#xE9;cifi&#xE9;s par les g&#xE8;nes du chromosome que l&apos;on souhaite transformer en chemin.</p>
+<p>Il faut tout d&apos;abord voir si cette cellule est une impasse, serait-ce le cas, elle peut &#xEA;tre marqu&#xE9;e comme un mur, afin de ne plus jamais y retourner. Ce n&apos;est vraissemblablement pas la bonne voie.</p>
+<p>La fonction <code>parse_chromosome</code> se charge notamment de valider une cellule avant de l&apos;ajouter au chemin. Cette &#xE9;tape est cruciale car suivant l&apos;instruction, la prochaine cellule, g&#xE9;n&#xE9;r&#xE9;e depuis cette instruction, pourrait sortir de la grille ou encore heurter un mur. Deux ph&#xE9;nom&#xE8;nes &#xE0; &#xE9;viter pour garantir l&apos;int&#xE9;grit&#xE9; et la validit&#xE9; du chemin.</p>
+<p>La validation d&apos;une cellule se fait selon trois conditions &#xE9;l&#xE9;mentaires:</p>
+<ul>
+<li>la cellule doit imp&#xE9;rativement &#xEA;tre &#xE0; l&apos;int&#xE9;rieur de la grille ;</li>
+<li>la cellule ne doit pas &#xEA;tre un mur ;</li>
+<li>la cellule ne doit pas avoir &#xE9;t&#xE9; visit&#xE9; lors de l&apos;it&#xE9;ration pr&#xE9;c&#xE9;dente.</li>
+</ul>
+<p>Cette derni&#xE8;re condition assure que la t&#xEA;te du chemin ne partent pas dans une course frantique en aller-retours sans jamais s&apos;arr&#xEA;ter ou encore en faisant perdre du temps &#xE0; l&apos;algorithme.</p>
+<p>Une fois la cellule valid&#xE9;e, elle peut &#xEA;tre ajout&#xE9;e au chemin.</p>
+<p>Lorsque la fonction termine la compilation du chemin, elle le retourne.</p>
+<h2 class="mume-header" id="fitness">Fitness</h2>
+
+<p>La fonction de fitness peut alors utiliser le chemin g&#xE9;n&#xE9;r&#xE9; auparavant pour en calculer la &quot;survivabilit&#xE9;&quot;. Ce n&apos;est rien d&apos;autre qu&apos;un score qui servira de classer l&apos;individu parmi ces cong&#xE9;n&#xE8;res. Ce score est &#xE9;valu&#xE9; selon deux crit&#xE8;res:</p>
+<ul>
+<li>L&apos;<strong>ind&#xE9;cision</strong> d&#xE9;signe si le chemin contient plusieurs fois la m&#xEA;me cellule, il est alors ind&#xE9;cis sur o&#xF9; aller et retourne sur ces pas, ce qui n&apos;est pas optimal ;</li>
+<li>Le lieu de la cellule cible, si elle est contenue ;</li>
+</ul>
+<p>Ceci est impl&#xE9;ment&#xE9; comme suit :</p>
+<pre data-role="codeBlock" data-info="text" class="language-text">Si le chemin contient la cellule cible ;
+    
+    Si le chemin n&apos;est pas ind&#xE9;cis, 
+        le score sera simplement l&apos;index de la cellule cible dans le chemin ;
+    
+    Sinon, si le chemin est ind&#xE9;cisif, 
+        le score sera l&apos;index de la cellule abattu par un multiplicateur 
+        relativement s&#xE9;v&#xE8;re afin de d&#xE9;courager l&apos;ind&#xE9;cision.
+
+Sinon, 
+    le score sera la distance euclidienne de la derni&#xE8;re cellule du chemin 
+    jusqu&apos;&#xE0; la cellule cible afin d&apos;encourager le mouvement g&#xE9;n&#xE9;ral vers la cible.
+</pre><h2 class="mume-header" id="g%C3%A9n%C3%A9ration">G&#xE9;n&#xE9;ration</h2>
+
+<p>Apr&#xE8;s avoir &#xE9;tabli un ranking des meilleurs individus selon leur fitness, on peut d&#xE9;buter avec la phase de croisement. Cette partie se fait avec un croisement en un point. Ceci est la meilleure mani&#xE8;re de r&#xE9;ussir &#xE0; g&#xE9;n&#xE9;rer plusieurs branchements diff&#xE9;rents pour mieux se rapprocher de la cible.</p>
+<p>Lors de chaque g&#xE9;n&#xE9;ration une partie des g&#xE8;nes subissent des mutations. D&apos;un ordre de 80%.</p>
+<p>Une s&#xE9;lection des meilleurs individus est alors accompli gr&#xE2;ce &#xE0; un tournois en groupes de 3.</p>
+<p>Ces fonctions sont d&#xE9;finies gr&#xE2;ce &#xE0; deap avec les lignes de code suivantes :</p>
+<pre data-role="codeBlock" data-info="py" class="language-python">toolbox<span class="token punctuation">.</span>register<span class="token punctuation">(</span><span class="token string">&quot;crossover&quot;</span><span class="token punctuation">,</span> tools<span class="token punctuation">.</span>cxOnePoint<span class="token punctuation">)</span>
+toolbox<span class="token punctuation">.</span>register<span class="token punctuation">(</span><span class="token string">&quot;mutate&quot;</span><span class="token punctuation">,</span> tools<span class="token punctuation">.</span>mutShuffleIndexes<span class="token punctuation">,</span> indpb<span class="token operator">=</span>INDPB<span class="token punctuation">)</span>
+toolbox<span class="token punctuation">.</span>register<span class="token punctuation">(</span><span class="token string">&quot;select&quot;</span><span class="token punctuation">,</span> tools<span class="token punctuation">.</span>selTournament<span class="token punctuation">,</span> tournsize<span class="token operator">=</span>TOURN_SIZE<span class="token punctuation">)</span>
+</pre><p>Les constantes utilis&#xE9;es lors des exp&#xE9;rimentations sont :</p>
+<pre data-role="codeBlock" data-info="py" class="language-python">CHROMOSOME_LENGTH   <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">(</span>grid<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> grid<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+POPULATION_SIZE     <span class="token operator">=</span> <span class="token number">50</span>
+TOURN_SIZE          <span class="token operator">=</span> <span class="token number">3</span>
+CXPB    <span class="token operator">=</span> <span class="token number">0.5</span>
+MUTPB   <span class="token operator">=</span> <span class="token number">0.8</span>
+INDPB   <span class="token operator">=</span> <span class="token number">0.1</span>
+</pre>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
